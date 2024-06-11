@@ -1,0 +1,304 @@
+/* VARIABLES */
+:root{
+  /* COLORS */
+  /* 
+  #FFFFFF
+  #F6A700
+  #1F1F1F
+  #E5E5E5
+
+  Alternativa negro
+
+
+  Alternativas al blanco
+  #FEFEFE
+  #F2F3F4
+  #FFF6FF
+  #F0F0F0
+
+  Alternativos al negro
+  #282828
+
+
+  reemplazo de blancos
+  #E3EDF8
+  #FFEDFA
+  #E7F6FF
+  #FEF5EA
+  #FFEDFA
+  #FAF5FF
+
+   */
+  --color-primary:#F6A700;
+  --color-secondary: #FFF7E7;
+  --color-tertiary: #E5E5E5;
+  --color-black: #1F1F1F;
+  --color-white: #FFF6FF;
+
+  /* SIZES */
+  --size-xxxs: 1.2rem;
+  --size-xxs: 1.4rem;
+  --size-xs: 1.5rem;
+  --size-smr: 1.6rem;
+  --size-sm: 1.8rem;
+  --size-md: 2rem;
+  --size-lg: 2.5rem;
+  --size-lgr: 3rem;
+  --size-xlg: 4rem;
+  --size-xxlg: 5rem;
+  --size-xxxlg: 6rem;
+
+  /* FONTS */
+  --font-title: "Oswald", sans-serif;;
+  --font-document: "Montserrat", sans-serif;
+}
+
+/* GENERAR */
+*, ::after, ::before{
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* ------------------------------------ */
+/* STYLES INCLUDED */
+/* html, body{
+  height: 100%;
+} */
+html{
+  background-color: var(--color-black);
+  color: var(--color-secondary);
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--font-document);
+  font-size: var(--size-smr);
+  line-height: 1.5;
+	/* line-height: 1; */
+}
+/* ------------------------------------ */
+header, nav,
+main, section, article, aside, 
+figure, footer, div{
+  width: 100%;
+}
+/* ------------------------------------ */
+h1, h2, h3, h4, h5, h6, p{
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-title);
+  font-size: var(--size-lg);
+  font-weight: bold;
+  letter-spacing: .5rem;
+  text-transform: capitalize;
+}
+a{
+  text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+/* ------------------------------------ */
+img{
+  max-width: 100%;
+  object-fit: cover;
+}
+button{
+  border: none;
+  font-size: var(--size-xxxs);
+  font-weight: bold;
+  letter-spacing: normal;
+}
+/* ------------------------------------ */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------------------------ */
+/* .header-content, .nav-content, .main-content
+.section-content, .article-content, .aside-content
+.footer-content */
+.main-content{
+  display: grid;
+  grid-template: repeat(6, auto) / auto;
+  place-content: center;
+  place-items: center;
+  gap: 4.5rem 0;
+}
+/* ------------------------------------ */
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+/* ------------------------------------ */
+.row-container, .col-container{
+  max-width: 100%;
+}
+
+.row-container{
+  display: grid;
+  place-content: center;
+  /* posibilidad, revisar */
+  place-items: center;
+}
+
+/* ------------------------------------ */
+.header-content{
+  outline: 1px solid red;
+  position: relative;
+}
+.nav-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* ----- SEARCH ICON ----- */
+.mobile__search{
+  outline: 1px solid red;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile__search span{
+  font-size: var(--size-lg);
+  /* font-size: var(--size-lgr); */
+  /* font-size: 25px; */
+}
+
+/* ----- LOGO ----- */
+.mobile__logo{
+  outline: 1px solid red;
+}
+.mobile__logo a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile__logo a img{}
+.mobile__logo a span{
+  font-family: var(--font-title);
+  color: var(--color-white);
+  font-size: var(--size-sm);
+}
+
+/* ----- BURGER ----- */
+.mobile__burger{
+  outline: 1px solid red;
+  width: auto;
+  cursor: pointer;
+}
+.lines{
+  width: 4rem;
+  height: .3rem;
+  margin: .5rem;
+  background-color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+/* TRANSFORM LINES - ICON BURGER */
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* ----- MENU ----- */
+.mobile__menu{
+  outline: 1px solid red;
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  /* top: 4rem; */
+  background-color: #131313;
+  /* background-color: var(--color-primary); */
+  transition: transform 0.5s ease-in;
+  transform: translateY(-100%);
+}
+.mobile__menu ul{
+  outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.mobile__menu ul li{
+  outline: 1px solid red;
+  width: 100%;
+  font-size: var(--size-sm);
+  /* padding: 1.5rem 0; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  letter-spacing: .3rem;
+  text-transform: capitalize;
+}
+.mobile__menu ul li a{
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem 0;
+  color: var(--color-white);
+  font-weight: bold;
+  /* letter-spacing: .3rem; */
+}
+
+/* ACTIVE MENU BOX */
+.nav-active{
+  transform: translateY(10%);
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+/* ------------------------------------ */
