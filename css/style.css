@@ -364,13 +364,14 @@ table {
 }
 .hero-content .hero__info h2{
   font-style: italic;
+  letter-spacing: 0.2rem;
   /* color: #FFCA56; */
   /* color: var(--color-primary); */
   /* font-style: italic; */
   /* padding-left: 1rem; */
 }
 .hero-content .hero__info p{
-  padding: 1rem 0;
+  padding: 2rem 0;
   /* padding-top: 2rem; */
   /* padding: 1rem; */
   
@@ -379,8 +380,30 @@ table {
   outline: 1px solid red;
   width: 15rem;
   height: 4rem;
+  font-size: var(--size-sm);
+  /* font-size: var(--size-smr); */
+  /* font-size: var(--size-xs */
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  /* padding: 1rem 0; */
+}
+
+/* ------------------------------------ */
+.about__content{
+  margin: 4.5rem 0;
+  /* padding: 2rem 1rem; */
+  /* padding: 5rem 0; */
+}
+.about__content--article{
+  padding: 2.5rem 0;
+}
+.about__content--article h3{
+  padding: 2rem .3rem;
+}
+.about__content--article p{
   padding: 1rem 0;
 }
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 
