@@ -184,13 +184,38 @@ table {
 /* ------------------------------------ */
 .header-content{
   outline: 1px solid red;
-  position: relative;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  /* position: relative; */
+  transition: all 0.4s ease-out;
+  /* opacity: 0; */
+  /* top: 50%; */
 }
+/* SCROLL DOWN WINDOW */
+.scroll-down{
+  position: sticky;
+  top: 0;
+  /* color: var(--color-black);
+  background-color: var(--color-secondary); */
+}
+
 .nav-content{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+/* SCROLL MENU */
+/* .scroll-menu{
+  color: var(--color-black);
+} */
+ /* .mobile__search span, .mobile__logo a, .mobile__burger .lines{
+  color: var(--color-white);
+  background-color: var(--color-white);
+ } */
 
 /* ----- SEARCH ICON ----- */
 .mobile__search{
@@ -259,6 +284,7 @@ table {
   /* background-color: var(--color-primary); */
   transition: transform 0.5s ease-in;
   transform: translateY(-100%);
+  z-index: 1;
 }
 .mobile__menu ul{
   outline: 1px solid red;
@@ -294,10 +320,67 @@ table {
 
 /* ACTIVE MENU BOX */
 .nav-active{
-  transform: translateY(10%);
+  transform: translateY(12%);
+  /* transform: translateY(10%); */
 }
 
 /* ------------------------------------ */
+.hero-content{
+  outline: 1px solid red;
+  position: relative;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* VIDEO */
+.hero-content .hero__video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+/* shadow */
+.hero__shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* background: rgb(255,194,62);
+  background: linear-gradient(0deg, rgba(255,194,62,0.8477766106442577) 0%, rgba(31,31,31,0.80015756302521) 8%); */
+  /* background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(246,167,0,1) 49%); */
+  background-color: #1f1f1f9f;
+
+}
+
+/*  */
+.hero-content .hero__info{
+  outline: 1px solid red;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  padding: 0 1rem;
+}
+.hero-content .hero__info h2{
+  font-style: italic;
+  /* color: #FFCA56; */
+  /* color: var(--color-primary); */
+  /* font-style: italic; */
+  /* padding-left: 1rem; */
+}
+.hero-content .hero__info p{
+  padding: 1rem 0;
+  /* padding-top: 2rem; */
+  /* padding: 1rem; */
+  
+}
+.hero__info button{
+  outline: 1px solid red;
+  width: 15rem;
+  height: 4rem;
+  padding: 1rem 0;
+}
 /* ------------------------------------ */
 /* ------------------------------------ */
 

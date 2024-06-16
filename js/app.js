@@ -1,3 +1,18 @@
+// SCROLL WINDOW
+// 
+const windowScroll = () => {
+  const headerScroll = document.querySelector('.header-content');
+  // const menuScroll = document.querySelector('.nav-content');
+
+  window.addEventListener('scroll', () => {
+    headerScroll.classList.toggle('scroll-down', window.scrollY > 0);
+
+    // menuScroll.classList.toggle('scroll-menu', window.scrollY > 0)
+
+  });
+}
+windowScroll();
+
 // MENU
 // 
 const downSlide = () => {
