@@ -33,9 +33,7 @@ const downSlide = () => {
     // navContent.style.color = '#131313';
 
   });
-
 }
-
 downSlide();
 
 
@@ -45,3 +43,37 @@ downSlide();
 //   const btnSearch = document.querySelector('.mobile__search')
 //   const sectionSearch = document.createElement('div')
 // }
+
+
+
+// DROPDOWN - PROJECTS
+// 
+const dropdownProjects = () => {
+  const dropdownBtn = document.querySelector('.projects__options--dropdown');
+  const selectBtn = document.querySelector('.dropdownBtn');
+  const selectItem = document.querySelector('.projects__options--item')
+
+  selectBtn.addEventListener('mouseover', function show(a){
+    selectItem.value = a;
+  });
+
+  
+  // selectBtn.value = a;
+  // function show(a){
+  //   document.querySelector('.dropdownBtn').value = a;
+  //   selectBtn.value = a;
+  // }
+
+
+  dropdownBtn.addEventListener('click', () => {
+    dropdownBtn.classList.toggle('dropdown-active');
+  });
+
+   // ITEM SELECT
+  //  function show(a){
+  //   document.querySelector('.dropdownBtn').value = a;
+  // }
+
+  
+}
+dropdownProjects()

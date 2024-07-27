@@ -14,8 +14,9 @@ RELEASE DATE:
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatibe" content="IE=edge">
-  <meta name="viewport" content="width=|, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <!-- META TAG'S -->
+  <meta name="robots" content="index, follow">
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
@@ -76,12 +77,14 @@ RELEASE DATE:
   </header>
 
   <!-- HERO SECTION -->
-  <section class="section-content hero-content">
+  <section class="hero-content">
     
     <!-- VIDEO - HERO CONTENT -->
      <video autoplay muted loop class="hero__video">
       <source src="./video/40030-424911975_small.mp4" type="video/mp4">
      </video>
+
+     <!-- SHADOW BACKGROUND -->
      <div class="hero__shadow"></div>
 
      <!-- INFORMATION - HERO CONTENT -->
@@ -95,10 +98,10 @@ RELEASE DATE:
   </section>
 
   <!-- MAIN CONTENT -->
-  <main class="main-content">
+  <main class="mainContent">
     
     <!-- ABOUT -->
-    <section class="section-content about__content">
+    <section class="sectionContent about__content">
       <div class="container">
         <article class="about__content--article">
           <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
@@ -108,24 +111,124 @@ RELEASE DATE:
     </section>
 
     <!-- PROJECTS -->
-    <section class="section-content projects-content"></section>
+    <section class="sectionContent projects__content">
+      <div class="container">
+        <!-- ROW - PROJECTS -->
+        <div class="row-container projects__row">
+
+          <!-- COL 1 - PROJECTS -->
+          <div class="col-container project__col--options">
+            <div class="projects__options">
+              
+              <!-- TITLE PROJECTS -->
+              <article class="projects__options--titles">
+                <h3>proyectos</h3>
+                <h6>estoy interesado en...</h6>
+                <!-- <h6>¿en que estas interesado?</h6>                 -->
+              </article>
+
+              <!-- OPTIONS SELECT -->
+              <div class="projects__options--dropdown">
+                <input type="text" class="dropdownBtn" readonly placeholder="Proyectos">
+                <div class="projects__options--select">
+                  <div class="projects__options--item">proyecto 1</div>
+                  <div class="projects__options--item">proyecto 2</div>
+                  <div class="projects__options--item">proyecto 3</div>
+                  <div class="projects__options--item">proyecto 4</div>
+                  <div class="projects__options--item">proyecto 5</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- COL 2 - PROJECTS -->
+          <div class="col-container project__col--carousel">
+            <div class="projects__carousel">
+              
+              <article class="project__item projects__img">
+                <div class="projects__article--text">
+                  <h6>Lorem, ipsum dolor.</h6>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                </div>
+              </article>
+              
+              <article class="project__item projects__img">
+                <div class="projects__article--text">
+                  <h6>Lorem, ipsum dolor.</h6>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                </div>
+              </article>
+              
+              <article class="project__item projects__img">
+                <div class="projects__article--text">
+                  <h6>Lorem, ipsum dolor.</h6>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                </div>
+              </article>
+              
+              <article class="project__item projects__img">
+                <div class="projects__article--text">
+                  <h6>Lorem, ipsum dolor.</h6>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- COL 3 - PROJECTS -->
+           <div class="col-container project__col--promotion">
+            <div class="project__promotion">
+              
+              <article class="promotion__item">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi cumque dolor consectetur! Deleniti earum doloremque eligendi, voluptates dolore quia dignissimos.</p>
+              </article>
+
+              <article class="promotion__item row_promotion">
+                <div class="col__promo">
+                  <p>23</p>
+                  <h6>total de proyectos</h6>
+                </div>
+                <div class="col__promo">
+                  <p>23</p>
+                  <h6>años de experiencia</h6>
+                </div>
+                <div class="col__promo">
+                  <p>23</p>
+                  <h6>clientes satisfechos</h6>
+                </div>
+              </article>
+
+              <article class="promotion__item">
+                <h6>25%</h6>
+                <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad amet quae corrupti porro earum dicta ex nulla. Pariatur, ullam sequi.</p>
+              </article>
+              
+            </div>
+           </div>
+          
+        </div>
+      </div>
+    </section>
 
     <!-- EXPERIENCE - OUR EXPERTISE -->
-    <section class="section-content"></section>
+    <section class="sectionContent"></section>
 
     <!-- OUR TEAM -->
-    <section class="section-content"></section>
+    <section class="sectionContent"></section>
 
     <!-- NEWS -->
-    <section class="section-content"></section>
+    <section class="sectionContent"></section>
     
     <!-- CONTACT -->
-    <section class="section-content"></section>
+    <section class="sectionContent"></section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer-content"></footer>
+  <footer class="footerContent"></footer>
 
   <!-- SCRIPT -->
   <script type="text/javascript" src="./js/app.js"></script>

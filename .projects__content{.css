@@ -1,0 +1,190 @@
+.projects__content{
+  outline: 1px solid red;
+  /* position: relative; */
+}
+
+/* PROJECTS - ROW */
+.projects__row{
+  grid-template: repeat(2, 1fr) / auto;
+}
+
+/* PROJECTS - COL */
+.project__col--options{
+  display: flex;
+  justify-content: center;
+}
+.project__col--carousel{}
+
+/* OPTIONS */
+.projects__options{
+  outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem 0;
+}
+.projects__options--titles{
+  /* outline: 1px solid red; */
+  position: relative;
+  margin: 2rem 0;
+}
+.projects__options--titles h3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff34;
+  /* background: #00000043; */
+  font-size: 8rem;
+  /* font-size: var(--size-xxlg); */
+  font-weight: 600;
+  /* font-size: var(--size-xlg); */
+  /* padding: 1rem 4rem 1rem; */
+}
+.projects__options--titles h6{
+  font-size: var(--size-md); /* 20px */
+  /* font-size: var(--size-sm); */
+  margin: 5rem;
+}
+
+/* ----- */
+.projects__options--dropdown{
+  outline: 1px solid red;
+  position: relative;
+  margin: 4.5rem 0;
+  /* margin-top: 4.5rem; */
+  /* padding-top: 2.5rem; */
+  /* width: 300%; */
+  width: 60%;
+  height: 5rem;
+}
+.projects__options--dropdown::after{
+  content: '';
+  position: absolute;
+  top: 2.5rem;
+  right: 2rem;
+  width: 1.2rem;
+  height: .2rem;
+  background: #555;
+  z-index: 3;
+  transform: rotate(-40deg);
+  transition: 0.5ms;
+}
+.projects__options--dropdown.dropdown-active::after{
+  right: 2.8rem;
+}
+
+.projects__options--dropdown::before{
+  content: '';
+  position: absolute;
+  top: 2.5rem;
+  right: 2.8rem;
+  width: 1.2rem;
+  height: .2rem;
+  background: #555;
+  z-index: 2;
+  transform: rotate(40deg);
+  transition: 0.5ms;
+}
+.projects__options--dropdown.dropdown-active::before{
+  right: 20px;
+}
+
+.projects__options--dropdown > input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 1.2rem 2rem;
+  font-size: var(--size-smr);
+  background: var(--color-secondary);
+  box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.05);
+  outline: none;
+  border: none;
+}
+.projects__options--dropdown > input::placeholder{
+  font-size: 2.5rem
+}
+/* .dropdownBtn::placeholder{
+  font-weight: 1000;
+} */
+
+.projects__options--select{
+  position: absolute;
+  top: 7rem;
+  width: 100%;
+  background-color: var(--color-tertiary);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.25s;
+  z-index: 1;
+}
+.projects__options--dropdown.dropdown-active div{
+  visibility: visible;
+  opacity: 1;
+}
+
+.projects__options--item{
+  color: var(--color-black);
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+}
+.projects__options--item:hover{
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+
+/* ----- */
+.projects__carousel{
+ 
+}
+.projects__carousel::-webkit-scrollbar{
+  width: 0;
+}
+.projects__carousel::-moz-scrollbar{
+  width: 0;
+}
+.projects__item{
+  /* outline: 1px solid red; */
+  /* flex: 0.5; */
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: center cover no-repeat; */
+}
+.projects__img{
+  background-image: url('https://images.unsplash.com/photo-1615283579792-b5f90542fac0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.projects__img:nth-child(2){
+  background-image: url('https://images.unsplash.com/photo-1523848309072-c199db53f137?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.projects__img:nth-child(3){
+  background-image: url('https://plus.unsplash.com/premium_photo-1661911778005-bda918172dd3?q=80&w=1482&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.projects__img:nth-child(4){
+  background-image: url('https://images.unsplash.com/photo-1524037755327-dc2def03712a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+.projects__article--text{
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+.projects__article--text h6{
+  font-size: var(--size-xs);
+}
+.projects__article--text h3{
+  font-size: var(--size-md);
+}
+
+/* ------------------------------------ */
+
+/* ------------------------------------ */
