@@ -1,7 +1,7 @@
 // SCROLL WINDOW
 // 
 const windowScroll = () => {
-  const headerScroll = document.querySelector('.header-content');
+  const headerScroll = document.querySelector('.headerContent');
   // const menuScroll = document.querySelector('.nav-content');
 
   window.addEventListener('scroll', () => {
@@ -45,6 +45,32 @@ downSlide();
 // }
 
 
+// TEXT SLIDER
+// 
+const sliderMoveTitles = () => {
+  const carouselText = document.querySelector('.experience__slidetitle')
+  const listTextCarousel = carouselText.querySelector('.experience__ul');
+
+  
+  function cloneFirst() {
+    const firstItem = listTextCarousel.firstElementChild.cloneNode(true);
+    listTextCarousel.appendChild(firstItem)
+  }
+
+  function cloneLast(){
+    const lastItem = listTextCarousel.lastElementChild.cloneNode(true);
+    listTextCarousel.insertBefore(lastItem, listTextCarousel.firstChild)
+  }
+
+  // ELEMENTS CLONE
+  cloneFirst()
+  cloneLast()
+}
+sliderMoveTitles()
+
+
+
+
 
 // DROPDOWN - PROJECTS
 // 
@@ -77,3 +103,9 @@ const dropdownProjects = () => {
   
 }
 dropdownProjects()
+
+
+
+// SLIDER EXPERIENCE
+// const experienceSlider = () => {}
+// experienceSlider()
