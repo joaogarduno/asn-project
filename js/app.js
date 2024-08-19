@@ -1,5 +1,5 @@
-// SCROLL WINDOW
 // 
+// SCROLL WINDOW
 const windowScroll = () => {
   const headerScroll = document.querySelector('.headerContent');
   // const menuScroll = document.querySelector('.nav-content');
@@ -13,9 +13,10 @@ const windowScroll = () => {
 }
 windowScroll();
 
-// MENU
+
 // 
-const downSlide = () => {
+// SLIDE MENU
+const slideMenuDown = () => {
   const mobileBurger = document.querySelector('.mobile__burger');
   const mobileMenu = document.querySelector('.mobile__menu');
   // const navContent = document.querySelector('.nav-content');
@@ -34,7 +35,7 @@ const downSlide = () => {
 
   });
 }
-downSlide();
+slideMenuDown();
 
 
 // 
@@ -45,8 +46,8 @@ downSlide();
 // }
 
 
-// TEXT SLIDER
 // 
+// TEXT SLIDER - SECTIONS & OPTIONS
 const sliderMoveTitles = () => {
   const carouselText = document.querySelector('.experience__slidetitle')
   const listTextCarousel = carouselText.querySelector('.experience__ul');
@@ -72,8 +73,8 @@ sliderMoveTitles()
 
 
 
-// DROPDOWN - PROJECTS
 // 
+// PROJECTS - DROPDOWN MENU
 const dropdownProjects = () => {
   const dropdownBtn = document.querySelector('.projects__options--dropdown');
   const selectBtn = document.querySelector('.dropdownBtn');
@@ -109,3 +110,18 @@ dropdownProjects()
 // SLIDER EXPERIENCE
 // const experienceSlider = () => {}
 // experienceSlider()
+
+
+
+// 
+// FOOTER - CONTACT
+const circleSlide = () => {
+  const textSlideCircle = document.querySelector('.contact__circle--text p')
+
+  textSlideCircle.innerHTML = textSlideCircle.innerText.split('').map(
+    (char, i) =>
+      `<span style='transform:rotate(${i * 8.3}deg)'>${char}</span>`
+  ).join('');
+}
+
+circleSlide()

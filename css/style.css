@@ -165,7 +165,7 @@ header,
 hgroup,
 menu,
 nav,
-section {
+section{
   display: block;
 }
 
@@ -282,8 +282,8 @@ footerContent */
   display: grid;
   grid-template: repeat(4, auto) / auto;
   place-content: center;
-  overflow: hidden;
   place-items: center;
+  overflow: hidden;
   gap: 2.5rem 0;
   /* gap: 4.5rem 0; */
 }
@@ -317,10 +317,10 @@ footerContent */
 }
 .col-container{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 /* --------------- HEADER --------------- */
@@ -1085,6 +1085,187 @@ footerContent */
   border: 1px solid var(--color-primary);
 }
 
+/* --------------- FOOTER - CONTACT --------------- */
+/* .footer__section{
+  padding-top: 5rem;
+} */
+/* ROW */
+.contact__row{
+  grid-template: repeat(4, 1fr) / auto;
+  /* place-items: center;
+  place-content: center; */
+  gap: 5rem 0;
+}
+/* display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 5rem 0; */
+
+
+/* COL 1 */
+/* .contact__col--circle{} */
+
+/* .contact__col--circle article{
+  outline: 1px solid red;
+} */
+.contact__col--circle article h5{
+  padding: 2rem 2rem 2rem;
+}
+
+/* CIRCLE */
+.contact__circle{
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  /* background-color: #593D00; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact__circle i{
+  /* outline: 1px solid red; */
+  font-size: 10rem;
+}
+/* .contact__circle--icon{
+  outline: 1px solid red;
+  font-size: 8rem;
+} */
+.contact__circle--text{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: roundcircle 30s linear infinite;
+}
+@keyframes roundcircle{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.contact__circle--text span{
+  position: absolute;
+  left: 50%;
+  font-size: var(--size-xs);
+  transform-origin: 0 100px;
+}
+/* .contact__circle--text span{} */
+
+
+/* COL 2 */
+.contact__col--about{}
+.contact__col--about article{}
+
+/*  */
+.contact__col--about article h5{
+  padding: 1rem 0 2rem;
+}
+
+/*  */
+/* .contact__col--about article ul{} */
+.contact__col--about article ul li{
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.contact__col--about article ul li a{
+  text-decoration: underline;
+  /* font-size: var(--size-sm); */
+  color: var(--color-secondary);
+}
+
+/* COL 3 */
+.contact__col--service{}
+.contact__col--service article{}
+
+/*  */
+.contact__col--service article h5{
+  padding: 1rem 0 2rem;
+}
+
+/*  */
+.contact__col--service article ul{}
+.contact__col--service article ul li{
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.contact__col--service article ul li a{
+  text-decoration: underline;
+  color: var(--color-secondary);
+}
+
+
+/* COL 4 */
+.contact__col--projects{}
+.contact__col--projects article{}
+
+/*  */
+.contact__col--projects article h5{
+  padding: 1rem 0 2rem;
+}
+
+/*  */
+.contact__col--projects article ul{}
+.contact__col--projects article ul li{
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.contact__col--projects article ul li a{
+  text-decoration: underline;
+  color: var(--color-secondary);
+}
+
+
+/* -------- */
+.footer__row{
+  grid-template: repeat(2, 1fr) / auto;
+}
+
+/*  */
+.footer__col{}
+
+/*  */
+.footer__col article{}
+.footer__col article ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: space-around; */
+}
+.footer__col article ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__col article ul li a{
+  color: var(--color-white);
+  font-size: var(--size-lg);
+  /* font-size: var(--size-sm); */
+}
+/* .footer__col article ul li a i{} */
+
+
+/*  */
+.footer__col ul{
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.footer__col ul li{
+  margin: .5rem 0;
+  font-size: var(--size-xxxs);
+}
+.footer__col ul li a{
+  /* font-size: var(--size-xxs); */
+  color: var(--color-white);
+}
 
 
 
